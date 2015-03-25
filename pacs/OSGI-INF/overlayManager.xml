@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="overlayManager">
+   <implementation class="pacs.OverlayManager"/>
+   <reference bind="addOverlay" cardinality="0..n" interface="overlay.api.IOverlay" name="IOverlay" policy="dynamic" unbind="removeOverlay"/>
+   <service>
+      <provide interface="pacs.IOverlayManager"/>
+   </service>
+</scr:component>

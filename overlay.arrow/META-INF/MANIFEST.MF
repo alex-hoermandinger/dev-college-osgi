@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: overlay.arrow
+Bundle-SymbolicName: overlay.arrow
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: overlay.arrow.Activator
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Import-Package: org.osgi.framework;version="1.3.0"
+Bundle-ActivationPolicy: lazy
+Require-Bundle: overlay.api;bundle-version="1.0.0"
+Service-Component: OSGI-INF/arrow.xml
